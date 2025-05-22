@@ -18,7 +18,7 @@ st.info("Paste text or upload a CSV file to analyze sentiment.")
 
 load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
-GEMINI_API_KEY = st.sidebar.text_input("AIzaSyDjC1F4bss3DEOxkIRhX3hRU-u5dwjx3yI", type="password", value=api_key)
+GEMINI_API_KEY = st.sidebar.text_input("API key", type="password", value=api_key)
 
 # Function to get LLM sentiment response
 def get_response(post_text):
